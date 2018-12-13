@@ -5,7 +5,7 @@ Este repositorio contiene la prueba técnica de Alfatec.
 ## Requisitos ##
 
 Requisito                                                                     | API
--------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------|------------------
 Mostrar listado de usuarios con datos cargados, por ejemplo desde un JSON     | :heavy_check_mark:
 Crear un nuevo usuario y validar los datos                                    | :heavy_check_mark:
 Editar un usuario y validar los datos                                         | :heavy_check_mark:
