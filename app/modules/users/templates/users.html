@@ -1,0 +1,49 @@
+<div ng-if="!isCreate">
+	<div class="row">
+		<div class="col-md-12 text-center">
+			<h4 class="page-header">
+				Users List
+			</h4>
+		</div>
+	    <div class="col-md-12">
+			<div class="pull-left col-md-4">
+				<button id="btn-new-user" class="btn btn-sm btn-primary" ng-click="addUser()">
+					<span>Add User</span>
+				</button>
+				<button id="btn-delete-doctor" class="btn btn-sm btn-primary" ng-click="deleteDoctor()">
+					<span>Delete Doctor</span>
+				</button>
+			</div>
+	    </div>
+	</div>
+	<div class="table-responsive" style="margin-top: 10px">
+		<table class="table table-hover">
+			<th>NIF</th>
+			<th>clinical History Number</th>
+			<th>collegiate Number</th>
+			<th>Name</th>
+			<th>Surname</th>
+			<th>Lastname</th>
+			<th>Person Type</th>
+			<th>Professional Type</th>
+			<th colspan="3">Actions</th>
+			<tr ng-repeat="person in users">
+				<td>{{ person.nif }}</td>
+				<td>{{ person.clinicalHistoryNumber }}</td>
+				<td>{{ person.collegiateNumber }}</td>
+				<td>{{ person.name }}</td>
+				<td>{{ person.surName }}</td>
+				<td>{{ person.lastName }}</td>
+				<td>{{ person.personType == 'PRO' ? 'Profesional':'Paciente'}}</td>
+				<td>{{ getProfession(person.professionalType)}}</td>
+				<td><button ng-click="editUser(person)" class="btn btn-sm btn-warning">Edit</button></td>
+				<td><button ng-click="delete(person)" class="btn btn-sm btn-danger">Delete</button></td>
+				<td><button ng-click="seeDetails(person)" class="btn btn-sm btn-success">Details user</button></td>
+			</tr>
+		</table>
+	</div>
+</div>
+<div class="user-profile-content" ng-if="isCreate">
+	<div
+		ng-include="'/app/modules/users/templates/create-user.html'"></div>
+</div>

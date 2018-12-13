@@ -1,0 +1,105 @@
+[
+   {
+      "clinicalHistoryNumber":"",
+      "collegiateNumber":"3005020",
+      "name":"Armando",
+      "surName":"Casas",
+      "segundoapellido":"De Bareque",
+      "gender":"M",
+      "birthDate":"1990-12-12",
+      "nif":"1000200300",
+      "professionalType":"1",
+      "personType":"PRO",
+      "address":{
+         "street":"Falsa",
+         "number":"123",
+         "door":"A",
+         "postalCode":"2345",
+         "city":"Popayan"
+      },
+      "insurers":[
+         {
+
+         }
+      ]
+   },
+   {
+      "clinicalHistoryNumber":"",
+      "collegiateNumber":"123567",
+      "name":"Pedro",
+      "surName":"Perez",
+      "segundoapellido":"XXX",
+      "gender":"M",
+      "birthDate":"1970-12-12",
+      "nif":"1000200110",
+      "professionalType":"1",
+      "personType":"PRO",
+      "address":{
+         "street":"Fsssa",
+         "number":"1asd",
+         "door":"A",
+         "postalCode":"2345",
+         "city":"Cali"
+      },
+      "insurers":[
+         {
+
+         }
+      ]
+   },
+   {
+      "clinicalHistoryNumber":"12345",
+      "collegiateNumber":null,
+      "name":"Andres",
+      "surName":"Escobar",
+      "segundoapellido":null,
+      "gender":"M",
+      "birthDate":"1988-01-01",
+      "nif":"1070304239",
+      "professionalType":3,
+      "personType":"PAC",
+      "address":{
+         "street":"Avenida Siempre Viva",
+         "number":"6354",
+         "door":"B",
+         "postalCode":"9876",
+         "city":"Cajete"
+      },
+      "insurers":[
+         {
+            "name":"Aseguradora SOL S.A",
+            "insuranceType":"Salud",
+            "numberCard":"123456"
+         },
+         {
+            "name":"Aseguradora SOL S.A",
+            "insuranceType":"Dental",
+            "numberCard":"654321"
+         }
+      ]
+   },
+   {
+      "clinicalHistoryNumber":null,
+      "collegiateNumber":"208090",
+      "name":"Maria Adelaida",
+      "surName":"door",
+      "segundoapellido":"Gomez",
+      "gender":"F",
+      "birthDate":"1995-03-21",
+      "nif":"1061714204",
+      "professionalType":"2",
+      "personType":"PRO",
+      "address":{
+         "street":"Los proceres",
+         "number":"7-20",
+         "door":"4C",
+         "postalCode":"190001",
+         "city":"Popayan"
+      },
+      "insurers":[
+         {
+
+         }
+      ]
+   }
+]

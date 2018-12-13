@@ -1,0 +1,51 @@
+<div class="ngdialog-message text-center" >
+	<h4>{{message}}</h4>
+</div>
+<div class="ngdialog-buttons bd-example bd-example-tabs" >
+
+	<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+	  <li class="nav-item">
+	    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">personal information</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Address</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Aseguradoras</a>
+	  </li>
+	</ul>
+	<div class="tab-content" id="pills-tabContent">
+	  <div class="tab-pane fade active in" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" >
+			<ul class="list-group">
+			  <li class="list-group-item">Name: {{userDetail.name}}</li>
+			  <li class="list-group-item">Sur Name: {{userDetail.surName}}</li>
+			  <li class="list-group-item">Last Name: {{userDetail.lastName}}</li>
+			  <li class="list-group-item">Gender: {{userDetail.gender}}</li>
+			  <li class="list-group-item">Birth Date: {{userDetail.birthDate}}</li>
+				<li class="list-group-item">NIF: {{userDetail.nif}}</li>
+				<li class="list-group-item">Profession: {{userDetail.professionalType}}</li>
+			</ul>
+		</div>
+	  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+			<ul class="list-group">
+			  <li class="list-group-item">street Name: {{userDetail.address.street}}</li>
+			  <li class="list-group-item">number: {{userDetail.address.number}}</li>
+			  <li class="list-group-item">door: {{userDetail.address.door}}</li>
+			  <li class="list-group-item">postalCode: {{userDetail.address.postalCode}}</li>
+				<li class="list-group-item">city: {{userDetail.address.city}}</li>
+			</ul>
+		</div>
+	  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+			<div ng-repeat="insurer in userDetail.insurers" >
+				<ul class="list-group">
+				  <li class="list-group-item">Name: {{insurer.name}}</li>
+				  <li class="list-group-item">Type: {{insurer.insuranceType}}</li>
+				  <li class="list-group-item">number card: {{insurer.numberCard}}</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<button type="button" class="waves-effect waves-light  ngdialog-button ngdialog-button-secondary" ng-click="closeThisDialog('button')">Back</button>
+</div>
